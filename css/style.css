@@ -1,0 +1,17 @@
+body {
+	background-color: pink;
+}
+
+p {
+	font-family: "Times New Roman";
+	color: orange;
+	text-shadow: 2;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: green;
+	text-shadow: 4;
+	font-family: "Times New Roman";
+	text-align: center;
+}
