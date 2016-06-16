@@ -1,12 +1,13 @@
 var score;
 var canScoreNegs;
 
-function setCanScoreNegs(bool) {
-	canScoreNegs = bool;
-}
-
 function resetScore() {
 	score = 0;
+	canScoreNegs = false;
+}
+
+function setCanScoreNegs(bool) {
+	canScoreNegs = bool;
 }
 
 function addScore(num) {
