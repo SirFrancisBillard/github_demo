@@ -1,6 +1,14 @@
+//util functions
+
+function changeById(id, str) {
+	document.getElementById(id).innerHTML = str;
+}
+
+//scoring system
+
 var score;
 var scoreMin;
-var scoreMax
+var scoreMax;
 
 function resetScore() {
 	score = 0;
@@ -8,12 +16,24 @@ function resetScore() {
 	scoreMax = 100;
 }
 
+function updateScore() {
+	document.getElementById('scoreDisplay').innerHTML = score;
+}
+
 function setScoreMin(num) {
 	scoreMin = num;
 }
 
+function getScoreMin() {
+	return scoreMin;
+}
+
 function setScoreMax(num) {
 	scoreMax = num;
+}
+
+function getScoreMax() {
+	return scoreMax;
 }
 
 function addScore(num) {
@@ -45,6 +65,3 @@ function setScore(num) {
 	score = num;
 }
 
-function changeById(id, str) {
-	document.getElementById(id).innerHTML = str;
-}
