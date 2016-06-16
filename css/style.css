@@ -10,8 +10,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman";
 	color: green;
 	text-shadow: 4;
-	font-family: "Times New Roman";
 	text-align: center;
 }
