@@ -1,27 +1,38 @@
 var score;
-var canScoreNegs;
+var scoreMin;
+var scoreMax
 
 function resetScore() {
 	score = 0;
-	canScoreNegs = false;
+	scoreMin = 0;
+	scoreMax = 100;
 }
 
-function setCanScoreNegs(bool) {
-	canScoreNegs = bool;
+function setScoreMin(num) {
+	scoreMin = num;
+}
+
+function setScoreMax(num) {
+	scoreMax = num;
 }
 
 function addScore(num) {
 	score = score + num;
+	if (score > scoreMax) {
+		score = scoreMax;
+	}
+	if (score < scoreMin) {
+		score = scoreMin;
+	}
 }
 
 function subtractScore(num) {
 	score = score - num;
-	if canScoreNegs {
-		// nothing
-	} else {
-		if score < 0 {
-			score = 0;
-		}
+	if (score > scoreMax) {
+		score = scoreMax;
+	}
+	if (score < scoreMin) {
+		score = scoreMin;
 	}
 
 }
