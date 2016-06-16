@@ -10,14 +10,15 @@ var score;
 var scoreMin;
 var scoreMax;
 
+function updateScore() {
+	document.getElementById('scoreDisplay').innerHTML = score;
+}
+
 function resetScore() {
 	score = 0;
 	scoreMin = 0;
 	scoreMax = 100;
-}
-
-function updateScore() {
-	document.getElementById('scoreDisplay').innerHTML = score;
+	updateScore()
 }
 
 function setScoreMin(num) {
@@ -44,6 +45,7 @@ function addScore(num) {
 	if (score < scoreMin) {
 		score = scoreMin;
 	}
+	updateScore()
 }
 
 function subtractScore(num) {
@@ -54,7 +56,7 @@ function subtractScore(num) {
 	if (score < scoreMin) {
 		score = scoreMin;
 	}
-
+	updateScore()
 }
 
 function getScore() {
@@ -63,5 +65,5 @@ function getScore() {
 
 function setScore(num) {
 	score = num;
+	updateScore()
 }
-
