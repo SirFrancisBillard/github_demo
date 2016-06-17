@@ -1,12 +1,12 @@
-body{
+body {
 	background-color: pink;
 }
-div.shape{
+div.shape {
 	background-color: white;
 	width: 300px;
 	height: 300px;
 	margin: 10px;
 }
-div#circle{
+div#circle {
 	border-radius: 100%;
 }
