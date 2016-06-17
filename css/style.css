@@ -1,21 +1,12 @@
-body {
+body{
 	background-color: pink;
 }
-
-p {
-	font-family: "Times New Roman";
-	color: orange;
-	text-shadow: 2;
-	text-align: center;
+div.shape{
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
 }
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Times New Roman";
-	color: green;
-	text-shadow: 4;
-	text-align: center;
-}
-
-button {
-	color: purple;
+div#circle{
+	border-radius: 100%;
 }
