@@ -1,5 +1,8 @@
 //util functions
 
+var puppies;
+puppies = "https://www.google.com/search?q=puppies&espv=2&biw=1145&bih=594&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjm34Pura3NAhUhHGMKHYEyBRIQ_AUIBigB";
+
 function changeById(id, str) {
 	document.getElementById(id).innerHTML = str;
 }
@@ -67,3 +70,51 @@ function setScore(num) {
 	score = num;
 	updateScore()
 }
+
+//drawing
+
+function drawSphere(val) {
+	sphere(val, val, val, val, val, val)
+}
+
+//math
+
+function intToBin(num) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
